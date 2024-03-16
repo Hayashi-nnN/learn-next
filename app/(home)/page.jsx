@@ -2,8 +2,7 @@
 
 import Movie from '../../components/movie';
 import style from '../../styles/home.module.css';
-export const URL = 'https://nomad-movies.nomadcoders.workers.dev/movies';
-
+import { URL } from '../constants';
 export const metadata = {
   title: 'Home',
 };
