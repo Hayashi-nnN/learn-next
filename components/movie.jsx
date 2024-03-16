@@ -16,7 +16,9 @@ export default function Movie(props) {
   return (
     <div className={style.movie}>
       <img src={posterPath} alt={title} onClick={onClick} />
-      <Link href={`/movies/${id}`}>{title}</Link>
+      <Link prefetch href={`/movies/${id}`}>
+        {title}
+      </Link>
     </div>
   );
 }
