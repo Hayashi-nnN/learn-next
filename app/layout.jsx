@@ -1,7 +1,7 @@
 // Root Layout
 
 import '../styles/global.css';
-import Navigation from '../components/NavBar';
+import Navigation from '../components/nav-bar';
 
 export const metadata = {
   title: {
