@@ -1,4 +1,4 @@
-import NavItem from './NavItem';
+import NavItem from './NavItem.jsx';
 import styles from '../styles/navigation.module.css';
 
 export default function Navigation() {
