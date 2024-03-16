@@ -1,13 +1,8 @@
 export const metadata = {
-  title: 'About page',
-  description: 'About page',
+  title: 'Movies layout',
+  description: 'Movies layout',
 };
 
 export default function MoviesLayout({ children }) {
-  return (
-    <>
-      <h1>Movies layout</h1>
-      {children}
-    </>
-  );
+  return <div className='moviesLayout'>{children}</div>;
 }

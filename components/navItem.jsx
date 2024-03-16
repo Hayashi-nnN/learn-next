@@ -10,9 +10,9 @@ export default function navItem(props) {
     <li id={props.id}>
       <Link href={targetPathName === `Home` ? `/` : '/' + targetPathName}>
         {targetPathName}
+        {currentPath === `/${targetPathName}` ? '😝' : ''}
+        {currentPath === '/' && targetPathName === 'Home' ? '😝' : ''}
       </Link>
-      {currentPath === `/${targetPathName}` ? '😝' : ''}
-      {currentPath === '/' && targetPathName === 'Home' ? '😝' : ''}
     </li>
   );
 }

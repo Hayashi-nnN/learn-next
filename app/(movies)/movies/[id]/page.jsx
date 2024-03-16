@@ -1,15 +1,22 @@
-// movie detail page
+// movie info page
 
 import { Suspense } from 'react';
-import MovieInfo from '../../../../components/movie-info';
+import MovieInfo, { getMovieInfo } from '../../../../components/movie-info';
 import MovieVideos from '../../../../components/movie-videos';
 
-export default function MovieDetailPage(props) {
-  const id = props.params.id;
+export async function generateMetadata({ params }) {
+  const info = await getMovieInfo(params.id);
+  return {
+    title: info.title,
+  };
+}
+
+export default function MovieDetailPage({ params }) {
+  const id = params.id;
 
   return (
-    <div>
-      <Suspense fallback={<h1>Loading... Movie Info</h1>}>
+    <div className='movieInfoPage'>
+      <Suspense fallback={<div></div>}>
         <MovieInfo id={id} />
       </Suspense>
       <Suspense fallback={<h1>Loading... Movie Videos</h1>}>

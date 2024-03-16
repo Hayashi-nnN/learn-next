@@ -1,7 +1,3 @@
 export default function RootPageLoading() {
-  return (
-    <div>
-      <p>root page loading...</p>
-    </div>
-  );
+  return <div></div>;
 }

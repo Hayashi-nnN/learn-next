@@ -1,4 +1,5 @@
-import NavItem from './navItem';
+import NavItem from './NavItem';
+import styles from '../styles/navigation.module.css';
 
 export default function Navigation() {
   const navItemNames = [`Home`, `about`, `movies`];
@@ -9,7 +10,7 @@ export default function Navigation() {
   }
 
   return (
-    <nav>
+    <nav className={styles.navBar}>
       <ul>{navItems}</ul>
     </nav>
   );

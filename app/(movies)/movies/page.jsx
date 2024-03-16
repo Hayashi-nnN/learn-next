@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Movies page',
+  description: 'Movies page',
+};
+
 export default function MoviesPage() {
-  return <div>Movies page</div>;
+  return <div className='MoviesPage'></div>;
 }

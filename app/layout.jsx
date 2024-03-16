@@ -1,3 +1,6 @@
+// Root Layout
+
+import '../styles/global.css';
 import Navigation from '../components/NavBar';
 
 export const metadata = {
@@ -12,7 +15,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
-        root layout file
         <Navigation />
         {children}
       </body>
